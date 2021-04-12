@@ -1,24 +1,48 @@
-# identification
+# Presentationist - ww165, zz166
 
-## Project setup
+## Prod Part
 ```
-npm install
+Code in ./prod/
+No installation needed.
+Run ./prod/index.html with your browser.
 ```
 
-### Compiles and hot-reloads for development
+### Prod Note
+```
+Code in ./prod/ is not designed for human read.
+Do not edit code and files in ./prod/
+```
+
+## Dev Part
+```
+Code in ./src/
+designed for human read
+Node.js and npm are needed to run the development code.
+To Install, refer to:
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+```
+
+### Dev Setup
+```
+Node.js and npm are needed to run the development code.
+To Install, refer to:
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+```
+
+### Dev: Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Dev: Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Dev: Lints and fixes files
 ```
 npm run lint
 ```
 
-### Customize configuration
+### Dev: Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
