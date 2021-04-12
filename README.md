@@ -16,10 +16,7 @@ Do not edit code and files in ./prod/
 ## Dev Part
 ```
 Code in ./src/
-designed for human read
-Node.js and npm are needed to run the development code.
-To Install, refer to:
-https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+designed for human read and editing.
 ```
 
 ### Dev Setup
