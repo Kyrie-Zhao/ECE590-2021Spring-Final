@@ -22,9 +22,9 @@ designed for human read and editing.
 ### Dev Setup
 ```
 Node.js and npm are needed to run the development code.
-To Install, See:
-[Install Reference](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/).
 ```
+To Install, See [Install Reference](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/).
+
 
 ### Dev: Compiles and hot-reloads for development
 ```
