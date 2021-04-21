@@ -4,7 +4,7 @@
 ```
 Code in ./prod/
 No installation needed.
-Run ./prod/index.html with your browser.
+Run ./prod/index.html with your browser. Then you can check the whole website.
 ```
 
 ### Prod Note
@@ -29,6 +29,7 @@ To Install, See [Install Reference](https://docs.npmjs.com/downloading-and-insta
 ### Dev: Compiles and hot-reloads for development
 ```
 npm run serve
+Then you can check the website in dev mode(should be just like prod mode) at localhost:8080.
 ```
 
 ### Dev: Compiles and minifies for production
