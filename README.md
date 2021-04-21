@@ -4,7 +4,7 @@
 ```
 Code in ./prod/
 No installation needed.
-Run ./prod/index.html with your browser. Then you can check the whole website.
+Download code and run ./prod/index.html with your browser. Then you can check the whole website.
 ```
 
 ### Prod Note
