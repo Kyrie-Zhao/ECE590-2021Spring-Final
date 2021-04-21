@@ -9,9 +9,18 @@
       <el-menu-item index="6" v-if="checkLogin()" class="right-menu-2">Log Out</el-menu-item>
     </el-menu>
     </el-header>
-    <el-main v-if="!checkLogin()">
-        <h2 class="title">Presentationist</h2>
+    <el-main class = "caption" v-if="!checkLogin()">
+        <h1 class="title">Presentationist</h1>
         <h3 class="title">Your Smart Presentation Audience and Advisor</h3>
+        <el-carousel :interval="4000" type="card" indicator-position="outside" :height="hdgd">
+          <el-carousel-item v-for="item in imgList" :key="item.id" style="width:50%;" >
+            <el-row>
+                  <el-col :span="24"><img ref="imgHeight" :src="item.idView" class="banner_img"/></el-col>
+            </el-row>
+          </el-carousel-item>
+        </el-carousel>
+        <h3 class="title">Want to Try it out?</h3>
+        <el-button type="primary" @click="onClickRegister()">Sign Up Now!</el-button>
     </el-main>
     <el-main v-else>
       <el-col class = "tutorial-bg">
@@ -32,8 +41,29 @@ export default {
   name: 'HomePage',
   data() {
     return {
-      activeIndex: '1'
+      activeIndex: '1',
+      hdgd: '350px',
+      imgList: [
+            {id: 0, name:'0', idView: require('../assets/show1.png')},
+            {id: 1, name: '1', idView: require('../assets/show2.png')},
+            {id: 2, name: '2', idView: require('../assets/show3.png')}
+          ]
     }
+  },
+
+mounted() {
+        let that = this;
+        window.onresize = function windowResize() {
+          // 通过捕获系统的onresize事件触发我们需要执行的事件
+          var w = window.innerWidth
+          var h = 350
+          if (w > 1500) {
+            h = 350
+          } else {
+            h = 0.22 * w
+          }
+          that.hdgd = h + 'px'
+        }
   },
   methods: {
       handleSelect(key) {
@@ -137,5 +167,29 @@ export default {
 }
 .el-main {
   height: 100%;
+}
+.caption {
+  margin: auto;
+  padding-top: 2%;
+  width: 80%;
+}
+ .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
+  img {
+	max-width: 100%;
+	max-height: 100%;
 }
 </style>
