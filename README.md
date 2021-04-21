@@ -1,6 +1,6 @@
 # Presentationist - ww165, zz208
 
-## Prod Part
+## Prod Part - production for checking
 ```
 Code in ./prod/
 No installation needed.
@@ -13,7 +13,7 @@ Code in ./prod/ is not designed for human read.
 Do not edit code and files in ./prod/
 ```
 
-## Dev Part
+## Dev Part - code for development
 ```
 Code in ./src/
 designed for human read and editing.
@@ -35,6 +35,7 @@ Then you can check the website in dev mode(should be just like prod mode) at loc
 ### Dev: Compiles and minifies for production
 ```
 npm run build
+A directory named './dist' will be created, run './dist/index.html' to check the built website.
 ```
 
 ### Dev: Lints and fixes files
