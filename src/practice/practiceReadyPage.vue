@@ -239,6 +239,11 @@ export default {
                     message: 'Quit Current Practice'
                 });
                 this.started = false;
+                this.stop();
+                this.seconds = 0;
+                this.minutes = 0;
+                this.hour = 0;
+                this.paused = false;
                 }).catch(() => {
                     this.paused = true;
                 });
