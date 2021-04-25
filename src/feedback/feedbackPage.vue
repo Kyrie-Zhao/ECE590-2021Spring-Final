@@ -10,10 +10,10 @@
       <el-main>
       <el-col :span="6" class="nav">
         <el-menu :default-active="activeIndex" class="el-menu-v" @select="handleSelectV">
-        <el-menu-item index="4" >Emotion and Heart Rate Timelines</el-menu-item>
-        <el-menu-item index="5" >Summary of Feedback</el-menu-item>
-        <el-menu-item index="6" >Recommended Tutorials</el-menu-item>
-        <el-menu-item index="7" >Practice Playback</el-menu-item>
+        <el-menu-item index="4" ><b>Emotion and Heart Rate Timeline</b></el-menu-item>
+        <el-menu-item index="5" ><b>Summary of Feedback</b></el-menu-item>
+        <el-menu-item index="7" ><b>Practice Playback</b></el-menu-item>
+        <el-menu-item index="6" ><b>Recommended Tutorials</b></el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span="15" class="context">
@@ -116,7 +116,7 @@ export default {
             nowTime: 0,
             playing: 'Slides',
             uploaded: false,
-            activeNames: ['1', '2'],
+            activeNames: [],
             tutorials: [{name:'The art of managing emotions | Daniel Goleman | WOBI',duration:'8:45',link:'https://www.youtube.com/watch?v=FKjj1tNcbtM',img:'2.1.jpeg'},{name:'TEDs secret to great public speaking | Chris Anderson',duration:'7:56',link:'https://youtube.com/watch?v=-FOCpMAww28',img:'1.1.png'},{name:'How To Give a Killer Presentation - With No Notes',duration:'7:10',link:'https://www.youtube.com/watch?v=gaoxXFju6uo',img:'1.3.png'}],
             playerOptions: {
               playbackRates: [0.5, 1.0, 1.5, 2.0], // 可选的播放速度

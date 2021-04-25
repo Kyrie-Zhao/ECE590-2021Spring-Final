@@ -10,11 +10,11 @@
       <el-main>
       <el-col :span="6" class="nav">
         <el-menu :default-active="activeIndex" class="el-menu-v" @select="handleSelectV">
-        <el-menu-item index="4" >General Advices</el-menu-item>
-        <el-menu-item index="5" >Emotion Managements</el-menu-item>
-        <el-menu-item index="6" >Interacting with Audiences</el-menu-item>
-        <el-menu-item index="7" >Creating Slides</el-menu-item>
-        <el-menu-item index="8" >Others</el-menu-item>
+        <el-menu-item index="4" ><b>General Advices</b></el-menu-item>
+        <el-menu-item index="5" ><b>Emotion Managements</b></el-menu-item>
+        <el-menu-item index="6" ><b>Interacting with Audiences</b></el-menu-item>
+        <el-menu-item index="7" ><b>Creating Slides</b></el-menu-item>
+        <el-menu-item index="8" ><b>Others</b></el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span="15" class="context">

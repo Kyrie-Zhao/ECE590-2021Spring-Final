@@ -69,7 +69,7 @@
             </el-carousel-item>
             </el-carousel>
         </div>
-        <div v-if="haveAsked()" class="mock" style="height: 100%"></div>
+        <div v-if="haveAsked()&&!haveUploaded()" class="mock" style="height: 100%"></div>
     </el-row>
     <el-row class="l3">
         <el-button v-if="!haveStarted()" class="btl" type="danger" @click="onClickCancel">Cancel</el-button>
@@ -172,7 +172,10 @@ export default {
                 }).then(() => {
                 this.connectBlue()
                 }).catch(() => {
-                this.onClickCancel()
+                this.$message({
+                    type: 'info',
+                    message: 'Quit Current Practice'
+                });   
                 });
         },
         connectBlue() {
