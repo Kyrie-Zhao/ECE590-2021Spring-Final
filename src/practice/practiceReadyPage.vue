@@ -36,7 +36,7 @@
                 <div class="el-upload__tip" slot="tip">Only Accept One File. Selecting a New File will Replace the Last Selected File.</div>
             </el-upload>
             <div slot="footer" class="dialog-footer">
-                <el-button @click="dialogUpVisible = false; askedNotUpload = true">Cancel</el-button>
+                <el-button @click="dialogUpVisible = false; askedNotUpload = true;">Cancel</el-button>
                 <el-button type="primary" @click="submitUpload">Upload</el-button>
             </div>
         </el-dialog>
