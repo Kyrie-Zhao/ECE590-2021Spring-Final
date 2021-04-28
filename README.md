@@ -50,6 +50,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## Recognition and Caption Part
 ```
 Code in ./recognition
+train.py: Training DNN model over FER2013 dataset.
+model.py: ResNet based deep neural network.
+classifyANDcaption.py: Inference the trained model on the video frame by frame, get the results,  caption on the initial figure, and download it one by one locally.
+videoaudio.py: Retrieve the initial audio track from the video and download it locally.
+video.py: Connect all the captioned frames to a video and attach the splitted audio file to the new video.
 
+TO RUN, DOWNLOAD THE DATASET [FER2013](https://www.kaggle.com/msambare/fer2013) AT FIRST.
 ```
 
