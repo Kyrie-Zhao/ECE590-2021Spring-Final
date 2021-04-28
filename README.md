@@ -45,3 +45,11 @@ npm run lint
 
 ### Dev: Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Recognition and Caption Part
+```
+Code in ./recognition
+
+```
+
